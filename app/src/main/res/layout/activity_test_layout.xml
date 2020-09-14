@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="100"
+    android:layout_margin="20dp"
+    tools:context=".TestLayout"
+    >
+
+    <Button
+        android:id="@+id/btnToast"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cantata_one"
+        android:isScrollContainer="false"
+        android:text="Toast"
+        android:textColor="#009688" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:background="#91A1A0"
+        android:backgroundTint="#AACAC7"
+        android:fontFamily="@font/cantata_one"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="90sp" />
+
+    <Button
+        android:id="@+id/btnCount"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:fontFamily="@font/cantata_one"
+        android:gravity="center"
+        android:onClick="numberClick"
+        android:text="Count"
+        android:textColorLink="#009688" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/cantata_one"
+        android:hint="This is an edit text"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+</LinearLayout>
